@@ -13,7 +13,14 @@ The second milestone consited of using the S3 bucket that was created in S3 to t
 This is what the final outcome should be showing like so ![Alt text]([image link](https://ibb.co/bHgb4M6)https://ibb.co/bHgb4M6)
 
 
+## Milestone 3: Batch Processing - Configure the API in API Gateway
 
+The third milestone the use of API with using kafka was done by creation of the PROXY intergration. Secondaly the resource when it was made by creating a HTTP ANY method which will be shown below. The correct PublicDNS had to be added from the EC2 then this allowed the deployment of the API to be done and the Invork URL to be extracted. Then the installation of the confluent package had to be installed in the Kafka EC2 client which could allow  the REST proxy to perform IAM authentication to the MSK cluster by modifying the kafka-rest.properties file by using nano. Leading to the REST proxy to be started. For the user to send data to the API. The modification of the file of the user_posting_emulation.py had to be done by using the Invoke URL that was done earlier it can be used to send data to your Kafka topics. The final response should be "200" for the status code
+
+This is what the final outcome should be showing like so ![Alt text]([image link](https://rb.gy/3563dl)https://rb.gy/3563dl)
+
+
+## Milestone 4: Batch Processing - Databricks
 
 
 
