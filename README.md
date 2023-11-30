@@ -22,6 +22,9 @@ This is what the final outcome should be showing like so ![Alt text]([image link
 
 ## Milestone 4: Batch Processing - Databricks
 
+The forth milestone entails the data to be queried from the post emulation script, also to add don’t have the running post script on while running data bricks as the table of rows will not be the same for when the databricks is ran. Kafka REST proxy should be ran in the terminal along side databricks to allow the same rows of the table to be the same for each data from in being 'user', 'pin' and 'geo'. 
+
+This is what the final outcome should be showing like so ![Alt text]([image link](https://rb.gy/1qbed4)[https://rb.gy/1qbed4)
 
 
 
