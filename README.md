@@ -39,7 +39,7 @@ This is what the final outcome should be showing like so ![Alt text]([image link
 
 API Gateway -  Amazon API Gateway is an AWS service that allows the creation, maintenance and securing of scalable REST, HTTP and Websocket APIs. APIs can be created to access AWS services and other web services or data stored in the AWS Cloud. As a developer, you can use the service to create APIs that serve your client's applications or that are available to third-party app developers. There is three types of API's which are REST and HTTPS API. Rest API's are favoured than HTTP due to the latency is better. However with HTTPS this type of API was created by Amazon in 2019 and it does not offer as many features as REST APIs, and it only has regional endpoint support on AWS. This particular part of the project focused on using an intergration of a REST API due to the benefits it had such as the security and the regional support.
 
-The use of API with using kafka was done by creation of the PROXY intergration. Secondaly the resource when it was made by creating a HTTP ANY method which will be shown below. The correct PublicDNS had to be added from the EC2 then this allowed the deployment of the API to be done and the Invork URL to be extracted. Then the installation of the confluent package had to be installed in the Kafka EC2 client which could allow  the REST proxy to perform IAM authentication to the MSK cluster by modifying the kafka-rest.properties file by using nano. Leading to the REST proxy to be started. For the user to send data to the API. The modification of the file of the batch.py had to be done by using the Invoke URL that was done earlier it can be used to send data to your Kafka topics. The final response should be "200" for the status code.
+The use of API with using kafka was done by creation of the PROXY intergration. Secondly the resource when it was made by creating a HTTP ANY method which will be shown below. The correct PublicDNS had to be added from the EC2 then this allowed the deployment of the API to be done and the Invork URL to be extracted. Then the installation of the confluent package had to be installed in the Kafka EC2 client which could allow  the REST proxy to perform IAM authentication to the MSK cluster by modifying the kafka-rest.properties file by using nano. Leading to the REST proxy to be started. For the user to send data to the API. The modification of the file of the batch.py had to be done by using the Invoke URL that was done earlier it can be used to send data to your Kafka topics. The final response should be "200" for the status code.
 
 This is what the final outcome should be showing like so ![Alt text]([image link](https://rb.gy/3563dl)https://rb.gy/3563dl)
 
@@ -81,7 +81,7 @@ This is what the outcome should be for when the DAG is scheduled ![Alt text]([im
 When the DAG has succeeded it will look like this image shown ![Alt text]([image link](https://ibb.co/GkWkhPx)
 
 
-## Milestone 7: Stream Processing - AWS Kinesis
+## Stream Processing - AWS Kinesis
 AWS Kinesis can collect streaming data such as event logs, social media feeds, application data, and IoT sensor data in real time or near real-time. Kinesis enables you to process and analyze this data as soon as it arrives, allowing you to respond instantly and gain timely analytics insights. Kinesis utilises four main services 
 
 1) Kinesis Video Streams: a service used for stream processing of binary-encoded data, such as audio and video.
