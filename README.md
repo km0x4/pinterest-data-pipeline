@@ -89,13 +89,13 @@ AWS Kinesis can collect streaming data such as event logs, social media feeds, a
 3) Kinesis Data Firehose: an extract, transform, and load (ETL) service that captures, transforms, and delivers streaming data to data lakes, data stores, and analytics services.
 4) Kinesis Data Analytics: a service that enables you to use SQL code to continuously read, process, and store data in near real time.
 
-The utilisation of data streams was needed due to its nature of being a highly customizable AWS streaming solution. Highly customizable means that all parts involved with stream processing, such as data ingestion, 
+The utilisation of data streams was needed due to its nature of being a highly customizable AWS streaming solution. Highly customizable means that all parts involved with stream processing, such as data ingestion.
 
 The first step was to create streams using the username each with each dataframe connoation as an example "streaming-<your_UserId>-pin". Then a rest API had to be created the API involved create,delete and describe streams.
 
 The rest API will look like this ![Alt text]([image link](https://ibb.co/dmsHKnq)
 
-Sending data to kinesis the script had to be created that was built upon the user_posting_emulation that is attached in this repo but in a seperate file known as user_streaming_emulation_1st_april.py. This allowed you to be able to send requests to the API addingone record at a time for the streams created.
+Sending data to kinesis the script had to be created that was built upon the user_posting_emulation that is attached in this repo but in a seperate file known as user_streaming_emulation_1st_april.py. This allowed you to be able to send requests to the API adding one record at a time for the streams created.
 
 Data had to be read from the streams this was utilised by using Databricks, to see the final outcome the user can look at the "Kinesis to DB" that is attached to the reporisity, the data was also transformed using cleaning methods.
 
